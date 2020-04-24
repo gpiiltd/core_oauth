@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+    <form id="strait" name="strait" action="oauth/confirm">
+        <input type="hidden" value="{{.}}" name="code"/>
+        <!--input type="submit" value="Confirm" disabled/-->
+    </form>
+
+    <form action="oauth/cancel">
+        <input type="hidden" value="{{.}}" name="code"/>
+        <!--input disabled type="submit" value="Cancel"/-->
+    </form>
+
+<script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script><script>
+            $(document).ready(function()
+            {
+                document.getElementById("strait").submit();
+            })
+        </script></body>
+</html>
